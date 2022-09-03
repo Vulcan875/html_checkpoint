@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<head>
+
+  <html lang="en">
+  <meta charset="UTF-8">
+  <title>html checkpoint</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="">
+  <style>
+    html,
+    body {
+      height: 80%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .work-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Segoe UI", sans-serif
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("borhene.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
+  <script src=""></script>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">work</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">I am Borhene ddine ben attia</h1>
+      <p>And I'm a Web develepor</p><br>
+      <button>Hire me</button>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h1>About ME</h1>
+    <p>web develepor have mastered back-end front-end and web design with alot of expericens with web devolopment.</p>
+  </div>
+
+  <h2 style="text-align:center">recent certificate</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="frontend.jpg" alt="front-end" style="width:100%">
+        <div class="container">
+          <h2>Front-end cerficate</h2>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="backend.jpg" alt="back-end" style="width:100%">
+        <div class="container">
+          <h2>back-end certificate</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="webdesign.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2>web design cerficate </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="work-section">
+    <h1>work</h1>
+  </div>
+
+  <h2 style="text-align:center">recent work</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="portflio1.png" alt="jhonweb" style="width:100%">
+        <div class="container">
+          <h2> <a href="https://www.w3schools.com/howto/tryw3css_templates_dark_portfolio.htm">John portflio</a></h2>
+
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="portflio2.png" alt="janeport" style="width:100%">
+        <div class="container">
+          <h2> <a href="https://www.w3schools.com/howto/tryw3css_templates_bw_portfolio.htm">Jane portflio</a></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="portfelio3.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2> <a href="https://www.w3schools.com/howto/tryw3css_templates_portfolio2.htm">photographer portflio</a>
+          </h2>
+        </div>
+      </div>
+    </div><br>
+
+   
+
+
+
+
+</body>
+
+</html>
